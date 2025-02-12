@@ -1,5 +1,268 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8898900356753375265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Risposta giusta
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Risposta giusta
+  Guid:
+    Data1: -1453621550
+    Data2: 1199673337
+    Data3: -1958850894
+    Data4: -756597411
+  Banks:
+  - {fileID: 7014033029311366974}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-8545639383024095026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Oggetto perso
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Oggetto perso
+  Guid:
+    Data1: 852652056
+    Data2: 1208333171
+    Data3: -682316619
+    Data4: 1449619412
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &-7887808711843593615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-stelle/Muro stelle 6
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-stelle/Muro stelle 6
+  Guid:
+    Data1: 1981796808
+    Data2: 1297793487
+    Data3: 1436729498
+    Data4: 829083695
+  Banks:
+  - {fileID: 8297376856582063274}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 33166
+--- !u!114 &-5792408708228897206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-stelle/Muro stelle 4
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-stelle/Muro stelle 4
+  Guid:
+    Data1: -2019082979
+    Data2: 1192395965
+    Data3: -475444570
+    Data4: -675182376
+  Banks:
+  - {fileID: 8297376856582063274}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 33291
+--- !u!114 &-5403733222495258242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musica/Pianeti
+  m_EditorClassIdentifier: 
+  Path: event:/Musica/Pianeti
+  Guid:
+    Data1: -905147207
+    Data2: 1114008125
+    Data3: 527706006
+    Data4: 18214615
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 180000
+--- !u!114 &-2721737609588525826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638749493907548805
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &-2197899009854563088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-stelle/Muro stelle 3
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-stelle/Muro stelle 3
+  Guid:
+    Data1: 2075990845
+    Data2: 1247608953
+    Data3: -888115567
+    Data4: 786128033
+  Banks:
+  - {fileID: 8297376856582063274}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 67708
+--- !u!114 &-1904824595077032288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-pianeti/Muro Venere
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-pianeti/Muro Venere
+  Guid:
+    Data1: 317090107
+    Data2: 1284779049
+    Data3: -804532085
+    Data4: -1929251467
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 33666
+--- !u!114 &-1381434775391088027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-stelle/Muro stelle 2
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-stelle/Muro stelle 2
+  Guid:
+    Data1: -1977107441
+    Data2: 1138585409
+    Data3: -652407645
+    Data4: -648527704
+  Banks:
+  - {fileID: 8297376856582063274}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 53041
+--- !u!114 &-1173338784363475394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-stelle/Muro stelle 5
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-stelle/Muro stelle 5
+  Guid:
+    Data1: 155862353
+    Data2: 1162685417
+    Data3: 951305861
+    Data4: -658697137
+  Banks:
+  - {fileID: 8297376856582063274}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 38875
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +275,596 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: 1059545621995762111}
+  - {fileID: 6836628196006415046}
+  - {fileID: 7014033029311366974}
+  - {fileID: -2721737609588525826}
+  - {fileID: 2173354796157720559}
+  - {fileID: 7941114477747738187}
+  - {fileID: 8297376856582063274}
+  EditorEvents:
+  - {fileID: 261656163488996039}
+  - {fileID: 7497998921327287309}
+  - {fileID: 6919045828041953386}
+  - {fileID: -8898900356753375265}
+  - {fileID: 7924832315973329236}
+  - {fileID: -8545639383024095026}
+  - {fileID: 138248450933888666}
+  - {fileID: -1904824595077032288}
+  - {fileID: 5687029138715445126}
+  - {fileID: 6254383507318089186}
+  - {fileID: 1233395584594310252}
+  - {fileID: 2616437179217418745}
+  - {fileID: 1216870282939814827}
+  - {fileID: 5025854439888602968}
+  - {fileID: -5403733222495258242}
+  - {fileID: 372734969508736166}
+  - {fileID: 1381210151740398578}
+  - {fileID: 5085712463848479286}
+  - {fileID: -1381434775391088027}
+  - {fileID: -5792408708228897206}
+  - {fileID: -2197899009854563088}
+  - {fileID: -1173338784363475394}
+  - {fileID: 8096909599503412567}
+  - {fileID: 4456583244875458996}
+  - {fileID: -7887808711843593615}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  cacheTime: 0
+  MasterBanks:
+  - {fileID: -2721737609588525826}
+  StringsBanks:
+  - {fileID: 1059545621995762111}
+  cacheTime: 638749493907922615
   cacheVersion: 131622
+--- !u!114 &138248450933888666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Parabola
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Parabola
+  Guid:
+    Data1: 1829913126
+    Data2: 1208381308
+    Data3: 1081522574
+    Data4: -1915366919
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16000
+--- !u!114 &261656163488996039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musica/Atrio
+  m_EditorClassIdentifier: 
+  Path: event:/Musica/Atrio
+  Guid:
+    Data1: -1555300279
+    Data2: 1082637362
+    Data3: -1398028139
+    Data4: 1886693089
+  Banks:
+  - {fileID: 6836628196006415046}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 180000
+--- !u!114 &372734969508736166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-pianeti/Muro Nettuno
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-pianeti/Muro Nettuno
+  Guid:
+    Data1: 1480155367
+    Data2: 1185523140
+    Data3: 1963201681
+    Data4: -1321188961
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 29791
+--- !u!114 &1059545621995762111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638749493907590123
+  FileSizes:
+  - Name: Desktop
+    Value: 2046
+  Exists: 1
+--- !u!114 &1216870282939814827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-pianeti/Muro Mercurio
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-pianeti/Muro Mercurio
+  Guid:
+    Data1: -1481899650
+    Data2: 1092661267
+    Data3: -606396543
+    Data4: -256439801
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 23875
+--- !u!114 &1233395584594310252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-pianeti/Muro Terra
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-pianeti/Muro Terra
+  Guid:
+    Data1: 1721609579
+    Data2: 1325059151
+    Data3: 2109684144
+    Data4: -200956011
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 23541
+--- !u!114 &1381210151740398578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Tasto blocco
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Tasto blocco
+  Guid:
+    Data1: 2002849453
+    Data2: 1198145526
+    Data3: -1935725138
+    Data4: -1493730254
+  Banks:
+  - {fileID: 7941114477747738187}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2173354796157720559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Pianeti.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Pianeti.bank
+  Name: Pianeti
+  StudioPath: bank:/Pianeti
+  lastModified: 638749493907712632
+  FileSizes:
+  - Name: Desktop
+    Value: 4702464
+  Exists: 1
+--- !u!114 &2616437179217418745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-pianeti/Muro Giove
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-pianeti/Muro Giove
+  Guid:
+    Data1: -1184383627
+    Data2: 1093798015
+    Data3: 1425366689
+    Data4: 2082623866
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 28791
+--- !u!114 &4456583244875458996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musica/Stelle
+  m_EditorClassIdentifier: 
+  Path: event:/Musica/Stelle
+  Guid:
+    Data1: 312969904
+    Data2: 1133093295
+    Data3: 853223353
+    Data4: -2095108507
+  Banks:
+  - {fileID: 8297376856582063274}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 180000
+--- !u!114 &5025854439888602968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-pianeti/Muro Urano
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-pianeti/Muro Urano
+  Guid:
+    Data1: 766891158
+    Data2: 1088872190
+    Data3: -884772991
+    Data4: 1063326195
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30250
+--- !u!114 &5085712463848479286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musica/Blocco
+  m_EditorClassIdentifier: 
+  Path: event:/Musica/Blocco
+  Guid:
+    Data1: 705154293
+    Data2: 1211772494
+    Data3: 398740413
+    Data4: 380481570
+  Banks:
+  - {fileID: 7941114477747738187}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 81600
+--- !u!114 &5687029138715445126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-pianeti/Muro Marte
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-pianeti/Muro Marte
+  Guid:
+    Data1: -1249473458
+    Data2: 1075573388
+    Data3: -1856718402
+    Data4: -1738114043
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 21750
+--- !u!114 &6254383507318089186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-pianeti/Muro Saturno
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-pianeti/Muro Saturno
+  Guid:
+    Data1: 653517140
+    Data2: 1303438050
+    Data3: 458848696
+    Data4: -989845298
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 22541
+--- !u!114 &6836628196006415046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Atrio.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Atrio.bank
+  Name: Atrio
+  StudioPath: bank:/Atrio
+  lastModified: 638749493907548805
+  FileSizes:
+  - Name: Desktop
+    Value: 1960224
+  Exists: 1
+--- !u!114 &6919045828041953386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Risposta sbagliata
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Risposta sbagliata
+  Guid:
+    Data1: 1032298958
+    Data2: 1244313564
+    Data3: 2116165286
+    Data4: -2116943088
+  Banks:
+  - {fileID: 7014033029311366974}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &7014033029311366974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/General.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/General.bank
+  Name: General
+  StudioPath: bank:/General
+  lastModified: 638749493907548805
+  FileSizes:
+  - Name: Desktop
+    Value: 257600
+  Exists: 1
+--- !u!114 &7497998921327287309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musica/Ascensore
+  m_EditorClassIdentifier: 
+  Path: event:/Musica/Ascensore
+  Guid:
+    Data1: 524420245
+    Data2: 1138978155
+    Data3: -316849229
+    Data4: -1538495037
+  Banks:
+  - {fileID: 7014033029311366974}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19200
+--- !u!114 &7924832315973329236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Oggetto grabbato
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Oggetto grabbato
+  Guid:
+    Data1: 1434054670
+    Data2: 1276263306
+    Data3: 1348877751
+    Data4: 732751765
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &7941114477747738187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Schermata di blocco.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Schermata di blocco.bank
+  Name: Schermata di blocco
+  StudioPath: bank:/Schermata di blocco
+  lastModified: 638749493907756032
+  FileSizes:
+  - Name: Desktop
+    Value: 866048
+  Exists: 1
+--- !u!114 &8096909599503412567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-stelle/Muro stelle 1
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-stelle/Muro stelle 1
+  Guid:
+    Data1: 1208544341
+    Data2: 1145351911
+    Data3: 686753412
+    Data4: 1999069021
+  Banks:
+  - {fileID: 8297376856582063274}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 49986
+--- !u!114 &8297376856582063274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Stelle.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Stelle.bank
+  Name: Stelle
+  StudioPath: bank:/Stelle
+  lastModified: 638749493907922615
+  FileSizes:
+  - Name: Desktop
+    Value: 5440864
+  Exists: 1
