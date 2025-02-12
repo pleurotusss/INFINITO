@@ -12,7 +12,6 @@ public class GameStateMachine : BaseStateManager<GameStateMachine.EGameStateMach
     private GameContext _context;
     public static GameStateMachine Instance;
     
-
     private void Awake()
     {
         if (Instance == null) {
