@@ -5,8 +5,8 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/TitleScreen.unity
+  - enabled: 0
+    path: Assets/Scenes/EX_SCENES/EX_TitleScreen.unity
     guid: 28cbfb0be8b80ed4b924cdc34cb62bf7
   - enabled: 1
     path: Assets/Scenes/Piano_0.unity
@@ -17,7 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MasterPlanetario.unity
     guid: acfa831bc415a5f41a11aa9b587e8ce5
+  - enabled: 0
+    path: Assets/Scenes/EX_SCENES/EX_CommandsScreen.unity
+    guid: a717895013f0f7947b060fdda22a9591
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/CommandsScreen.unity
-    guid: a717895013f0f7947b060fdda22a9591
+    guid: ee5d31b25cd8edd48b737a14e2337278
   m_configObjects: {}
