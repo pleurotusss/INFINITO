@@ -11,6 +11,11 @@ namespace StarterAssets
 #endif
 	public class FirstPersonController : MonoBehaviour
 	{
+		 public Transform holdPoint; // Punto di tenuta per il materiale
+
+    	public static FirstPersonController Instance { get; private set; }
+		
+		
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
@@ -88,28 +93,38 @@ namespace StarterAssets
 
 		private void Awake()
 		{
-			// get a reference to our main camera
-			if (_mainCamera == null)
-			{
-				_mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
-
-            }
+			if (Instance == null)
+        {
+            Instance = this;
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+			_mainCamera = Camera.main.gameObject;
+			// get a reference to our main camera
+			if (holdPoint != null && _mainCamera != null)
+			{
+				holdPoint.SetParent(_mainCamera.transform);
+				holdPoint.localPosition = new Vector3(0.0f, -0.2f, 1.0f);
+			}
+		}
 
 		private void Start()
 		{
 			_controller = GetComponent<CharacterController>();
 			_input = GetComponent<StarterAssetsInputs>();
-			#if ENABLE_INPUT_SYSTEM
+#if ENABLE_INPUT_SYSTEM
 			_playerInput = GetComponent<PlayerInput>();
-			#else
+#else
 			Debug.LogError( "Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
-			#endif
+#endif
 
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
-        }
+		}
 
 		private void Update()
 		{
