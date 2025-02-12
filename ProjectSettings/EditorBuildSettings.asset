@@ -11,8 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Piano_0.unity
     guid: a8947e8927f505342a7d84a385f83746
-  - enabled: 1
-    path: Assets/Scenes/Piano_-1.unity
+  - enabled: 0
+    path: Assets/Scenes/EX_SCENES/EX_Piano_-1.unity
     guid: 59add9b0bccfc22489d90ad46e1650fb
   - enabled: 1
     path: Assets/Scenes/MasterPlanetario.unity
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CommandsScreen.unity
     guid: ee5d31b25cd8edd48b737a14e2337278
+  - enabled: 1
+    path: Assets/Scenes/Piano_-1.unity
+    guid: e22fcbf762f91894dbb5ed197486cc62
   m_configObjects: {}

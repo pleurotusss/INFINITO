@@ -17,7 +17,6 @@ public class GameStateMachine : BaseStateManager<GameStateMachine.EGameStateMach
         if (Instance == null) {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            EnsureManagersExist(); // Assicuriamoci che gli altri manager vengano istanziati
         } else {
             Destroy(gameObject);
         }
@@ -34,24 +33,6 @@ public class GameStateMachine : BaseStateManager<GameStateMachine.EGameStateMach
 
         CurrentState = States[EGameStateMachine.TitleScreen];
     }
-
-    private void EnsureManagersExist()
-    {
-        //// Verifica se il LevelManager esiste già, altrimenti lo crea
-        //if (FindObjectOfType<LevelManager>() == null)
-        //{
-        //    GameObject levelManagerObj = new GameObject("LevelManager");
-        //    levelManagerObj.AddComponent<LevelManager>();
-        //}
-
-        //// Verifica se il PlayerManager esiste già, altrimenti lo crea
-        //if (FindObjectOfType<PlayerManager>() == null)
-        //{
-        //    GameObject playerManagerObj = new GameObject("PlayerManager");
-        //    playerManagerObj.AddComponent<PlayerManager>();
-        //}
-    }
-
   
 }
 

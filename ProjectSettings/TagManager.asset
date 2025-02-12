@@ -9,11 +9,14 @@ TagManager:
   - BottoniChiusura
   - CinemachineTarget
   - Stop Music
+  - Slot
+  - Material
+  - Pianeta
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Buttons
   - Water
   - UI
   - 

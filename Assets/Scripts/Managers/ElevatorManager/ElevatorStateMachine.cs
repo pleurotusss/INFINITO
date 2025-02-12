@@ -8,7 +8,7 @@ using UnityEngine.Assertions;
 public class ElevatorStateMachine : BaseStateManager<ElevatorStateMachine.EElevatorStateMachine>
 {
     public enum EElevatorStateMachine { Idle, Moving, Arrived }
-    private ElevatorContext _context;
+    private ElevatorContext _elevatorContext;
     
     [SerializeField] private AutomaticDoors elevatorDoors;
     [SerializeField] private CameraShake cameraShake;
@@ -18,8 +18,8 @@ public class ElevatorStateMachine : BaseStateManager<ElevatorStateMachine.EEleva
     {
         ValidateCostrains();
 
-        _context = gameObject.AddComponent<ElevatorContext>(); 
-        _context.Initialize(elevatorDoors, cameraShake);
+        _elevatorContext = gameObject.AddComponent<ElevatorContext>(); 
+        _elevatorContext.Initialize(elevatorDoors, cameraShake);
 
         InitializeStates();
     }
@@ -33,12 +33,12 @@ public class ElevatorStateMachine : BaseStateManager<ElevatorStateMachine.EEleva
 
     private void InitializeStates()
     {
-        States.Add(EElevatorStateMachine.Idle, new IdleState(_context, EElevatorStateMachine.Idle));
-        States.Add(EElevatorStateMachine.Moving, new MovingState(_context, EElevatorStateMachine.Moving));
-        States.Add(EElevatorStateMachine.Arrived, new ArrivedState(_context, EElevatorStateMachine.Arrived));
+        States.Add(EElevatorStateMachine.Idle, new IdleState(_elevatorContext, EElevatorStateMachine.Idle));
+        States.Add(EElevatorStateMachine.Moving, new MovingState(_elevatorContext, EElevatorStateMachine.Moving));
+        States.Add(EElevatorStateMachine.Arrived, new ArrivedState(_elevatorContext, EElevatorStateMachine.Arrived));
 
-        _context.SetCurrentFloor("Piano_0");
-        _context.Loader();
+        _elevatorContext.SetCurrentFloor("Piano_0");
+        _elevatorContext.Loader();
         CurrentState = States[EElevatorStateMachine.Idle];
 
         //if (!GameManager.Instance.PlayerUsedElevator)
@@ -49,6 +49,6 @@ public class ElevatorStateMachine : BaseStateManager<ElevatorStateMachine.EEleva
 
     internal ElevatorContext GetContext()
     {
-        return _context;
+        return _elevatorContext;
     }
 }
