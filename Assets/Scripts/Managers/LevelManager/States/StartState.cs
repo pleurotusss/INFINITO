@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static LevelStateMachine;
 
-public class PlanetsState : LevelState
+public class StartState : LevelState
 {
-    public PlanetsState(LevelContext context, LevelStateMachine.ELevelStateMachine estate) : base(context, estate)
+    public StartState(LevelContext context, LevelStateMachine.ELevelStateMachine estate) : base(context, estate) 
     {
         Context = context;
     }
