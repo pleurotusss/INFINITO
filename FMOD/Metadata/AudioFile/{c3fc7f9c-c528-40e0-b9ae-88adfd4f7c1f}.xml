@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c3fc7f9c-c528-40e0-b9ae-88adfd4f7c1f}">
+		<property name="assetPath">
+			<value>Stelle/Stella centrale.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>16</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2e0a6d8f-88ce-4124-91da-8083f20aa461}</destination>
+		</relationship>
+	</object>
+</objects>
