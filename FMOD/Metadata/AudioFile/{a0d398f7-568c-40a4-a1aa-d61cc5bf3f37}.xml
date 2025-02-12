@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a0d398f7-568c-40a4-a1aa-d61cc5bf3f37}">
+		<property name="assetPath">
+			<value>Muri/Pianeti/Saturno.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>23.541666666666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2e0a6d8f-88ce-4124-91da-8083f20aa461}</destination>
+		</relationship>
+	</object>
+</objects>

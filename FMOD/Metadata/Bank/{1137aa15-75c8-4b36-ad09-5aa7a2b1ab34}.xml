@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Bank" id="{1137aa15-75c8-4b36-ad09-5aa7a2b1ab34}">
+		<property name="name">
+			<value>Pianeti</value>
+		</property>
+		<relationship name="folder">
+			<destination>{6987981d-ceda-429f-8ac9-822394ad9d3e}</destination>
+		</relationship>
+	</object>
+</objects>

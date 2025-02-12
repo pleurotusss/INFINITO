@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e81a7928-caea-4806-a34f-fae17117e155}">
+		<property name="assetPath">
+			<value>Atrio/Atrio.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>180</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2e0a6d8f-88ce-4124-91da-8083f20aa461}</destination>
+		</relationship>
+	</object>
+</objects>

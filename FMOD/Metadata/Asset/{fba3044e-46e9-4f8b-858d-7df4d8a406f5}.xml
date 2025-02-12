@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{fba3044e-46e9-4f8b-858d-7df4d8a406f5}">
+		<property name="assetPath">
+			<value>Muri/Stelle/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2e0a6d8f-88ce-4124-91da-8083f20aa461}</destination>
+		</relationship>
+	</object>
+</objects>

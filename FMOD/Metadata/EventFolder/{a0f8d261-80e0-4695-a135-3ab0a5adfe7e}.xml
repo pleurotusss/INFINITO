@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{a0f8d261-80e0-4695-a135-3ab0a5adfe7e}">
+		<property name="name">
+			<value>Muri-pianeti</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f8e732a8-afe6-46bf-a260-ef476572198c}</destination>
+		</relationship>
+	</object>
+</objects>

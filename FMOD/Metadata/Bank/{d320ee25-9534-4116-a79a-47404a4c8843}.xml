@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Bank" id="{d320ee25-9534-4116-a79a-47404a4c8843}">
+		<property name="name">
+			<value>Schermata di blocco</value>
+		</property>
+		<relationship name="folder">
+			<destination>{6987981d-ceda-429f-8ac9-822394ad9d3e}</destination>
+		</relationship>
+	</object>
+</objects>
