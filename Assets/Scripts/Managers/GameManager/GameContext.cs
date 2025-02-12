@@ -12,24 +12,23 @@ public class GameContext : MonoBehaviour
     public bool IsTimerFinished => _isTimerFinished;
 
     private int _CounterLED;
-    private int _CounterPlanetsFloor;
-    private int _CounterStarsFloor;
-
     public int CounterLED => _CounterLED;
-    public int CounterPlanetsFloor => _CounterPlanetsFloor;
-    public int CounterStarsFloor => _CounterStarsFloor;
+
+    private string _currentFloor;
+    public string CurrentFloor => _currentFloor;
+    public void SetCurrentFloor(string currentFloor)
+    {
+        _currentFloor = currentFloor;
+    }
 
     public void Initialize() 
     { 
         _CounterLED = 0;
-        _CounterPlanetsFloor = 0;
-        _CounterStarsFloor = 0;    
     }
 
-    private void Update() 
+    public void IncrementCounterLED()
     {
-        if (_CounterPlanetsFloor == 8) _CounterLED++;
-        if (_CounterStarsFloor == 2) _CounterLED++;
+        _CounterLED += 1;
     }
 
     public void OnTimerFinished()

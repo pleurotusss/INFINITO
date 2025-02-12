@@ -11,6 +11,8 @@ public class ElevatorContext : MonoBehaviour
 
     private AsyncOperation _asyncLoadOperation;
 
+    private GameContext _gameContext;
+
     private int _nextFloorIndex;
     private string _nextFloorName;
 
@@ -27,6 +29,7 @@ public class ElevatorContext : MonoBehaviour
     {
         _elevatorDoors = elevatorDoors;
         _cameraShake = cameraShake;
+        _gameContext = FindObjectOfType<GameContext>();
     }
 
     public void StartCameraShake(float duration, float intensity)
@@ -167,6 +170,7 @@ public class ElevatorContext : MonoBehaviour
     public void SetCurrentFloor(string currentFloor)
     {
         _currentFloor = currentFloor;
+        _gameContext.SetCurrentFloor(currentFloor);
     }
 
     public string GetCurrentFloor()
