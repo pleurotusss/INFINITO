@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{9cb9c7a2-af7c-4831-94d3-7d5953c40c90}">
 		<property name="assetPath">
-			<value>Indovinelli/Corretto.wav</value>
+			<value>Pianeti/Indovinelli Pianeta/Corretto.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

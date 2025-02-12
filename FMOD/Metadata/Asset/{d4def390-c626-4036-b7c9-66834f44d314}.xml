@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="EncodableAsset" id="{d4def390-c626-4036-b7c9-66834f44d314}">
 		<property name="assetPath">
-			<value>Indovinelli/</value>
+			<value>Pianeti/Indovinelli Pianeta/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{2e0a6d8f-88ce-4124-91da-8083f20aa461}</destination>
