@@ -5,7 +5,7 @@
 			<value>Risposta sbagliata</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{c6d6fa43-07d6-4d30-990d-88b3d8d9f654}</destination>
@@ -113,7 +113,6 @@
 	<object class="MixerBusEffectChain" id="{006738cb-0ccd-40b7-be87-8cdea718bc21}">
 		<relationship name="effects">
 			<destination>{4daab47f-1db9-48b4-adc2-920d9a9f877f}</destination>
-			<destination>{23c6858d-afee-45df-9fed-e752403c4efd}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{54d595b0-fdc5-4c8e-a226-daaa121f6550}" />
@@ -125,6 +124,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{73afa1e8-3d4f-4f42-aa2e-0bb9050c918a}" />
 	<object class="MixerBusFader" id="{4daab47f-1db9-48b4-adc2-920d9a9f877f}" />
-	<object class="SpatialiserEffect" id="{23c6858d-afee-45df-9fed-e752403c4efd}" />
 	<object class="MixerBusFader" id="{23de1672-a841-41d1-b07b-964c864cb910}" />
 </objects>

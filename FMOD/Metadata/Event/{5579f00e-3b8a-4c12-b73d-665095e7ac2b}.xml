@@ -5,7 +5,7 @@
 			<value>Oggetto grabbato</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{09a647f4-c11d-4c8e-93f3-1553378c560e}</destination>
@@ -97,9 +97,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{495fd379-915b-4c0c-99bf-0e30ca1375f5}">
-		<property name="volume">
-			<value>-24.5</value>
-		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -116,7 +113,6 @@
 	<object class="MixerBusEffectChain" id="{ec70032e-a76e-45cd-848f-f10a4ab43769}">
 		<relationship name="effects">
 			<destination>{aa673d81-3145-4319-9c10-5ae57a2b3f42}</destination>
-			<destination>{2d25ceab-a16e-4d10-9ed7-700ef8cedb41}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c8afff45-d488-4e62-a3c5-ab575b5af52e}" />
@@ -128,6 +124,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{21cd7306-19fd-4161-9fba-22dfc077975f}" />
 	<object class="MixerBusFader" id="{aa673d81-3145-4319-9c10-5ae57a2b3f42}" />
-	<object class="SpatialiserEffect" id="{2d25ceab-a16e-4d10-9ed7-700ef8cedb41}" />
 	<object class="MixerBusFader" id="{330fc123-62d2-4989-99b6-104ddb95c63a}" />
 </objects>
