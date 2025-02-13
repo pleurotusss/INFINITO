@@ -5,7 +5,7 @@
 			<value>Muro stelle 3</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{c15121ea-c041-412e-bdde-94e573ea2104}</destination>
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{bcabec33-7e47-474e-bd29-9bb850f73965}">
 		<relationship name="effects">
 			<destination>{596ab048-ce82-430c-8683-80e999b2a177}</destination>
-			<destination>{9d286faf-b8d8-4546-8ac2-58b18f3a2158}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{1db41af2-c2a8-42f5-b475-2e71d97c0fcf}" />
@@ -130,7 +129,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{c5410c31-09e9-472c-9939-0f090012a492}" />
 	<object class="MixerBusFader" id="{596ab048-ce82-430c-8683-80e999b2a177}" />
-	<object class="SpatialiserEffect" id="{9d286faf-b8d8-4546-8ac2-58b18f3a2158}" />
 	<object class="SFXReverbEffect" id="{96c2f5ce-d736-420f-90e3-de2c1a138af9}">
 		<property name="wetLevel">
 			<value>-15</value>

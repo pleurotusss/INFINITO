@@ -5,7 +5,7 @@
 			<value>Muro Venere</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{a0f8d261-80e0-4695-a135-3ab0a5adfe7e}</destination>
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{f398cc18-9472-450c-8910-d7c4da95fcda}">
 		<relationship name="effects">
 			<destination>{9cebf417-200a-419e-895b-26e72b8485c6}</destination>
-			<destination>{ac21d052-5e64-4a33-b5b3-2cbe2492e3de}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f979584c-dc23-46d3-b252-aa85fcc28840}" />
@@ -130,7 +129,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{82875cb7-26c5-425c-b79f-b0ca4525454c}" />
 	<object class="MixerBusFader" id="{9cebf417-200a-419e-895b-26e72b8485c6}" />
-	<object class="SpatialiserEffect" id="{ac21d052-5e64-4a33-b5b3-2cbe2492e3de}" />
 	<object class="SFXReverbEffect" id="{29e39f97-739f-4f60-9ca2-b334565b297b}">
 		<property name="wetLevel">
 			<value>-15</value>

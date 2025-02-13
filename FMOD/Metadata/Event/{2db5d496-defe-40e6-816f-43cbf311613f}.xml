@@ -5,7 +5,7 @@
 			<value>Muro Urano</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{a0f8d261-80e0-4695-a135-3ab0a5adfe7e}</destination>
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{90594ead-ac70-49e2-86ee-14496703e89f}">
 		<relationship name="effects">
 			<destination>{9c42f929-de1b-46f8-8cf3-b94ca1537219}</destination>
-			<destination>{536120e9-5b14-4f80-94d9-3ae4f1fee2c0}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{1596808a-f2b6-4b6e-a6c5-b236020d3fd2}" />
@@ -130,7 +129,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{b4d6c8dd-e0e3-4ece-83fa-a5d6f642a8b6}" />
 	<object class="MixerBusFader" id="{9c42f929-de1b-46f8-8cf3-b94ca1537219}" />
-	<object class="SpatialiserEffect" id="{536120e9-5b14-4f80-94d9-3ae4f1fee2c0}" />
 	<object class="SFXReverbEffect" id="{dc207312-5cac-4ee5-8ed5-feaacbc95455}">
 		<property name="wetLevel">
 			<value>-15</value>

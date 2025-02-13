@@ -5,7 +5,7 @@
 			<value>Muro Giove</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{a0f8d261-80e0-4695-a135-3ab0a5adfe7e}</destination>
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{48db7a31-a74d-4dbe-9368-d3a170274602}">
 		<relationship name="effects">
 			<destination>{80ead512-b545-413f-a041-42730841b680}</destination>
-			<destination>{800d8e68-54ad-415e-87cd-565718b5e6ab}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3dc7b1c7-83b7-43fe-9931-e928966d7787}" />
@@ -130,7 +129,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{55640641-3812-4549-a9d2-7ccba31f6a2a}" />
 	<object class="MixerBusFader" id="{80ead512-b545-413f-a041-42730841b680}" />
-	<object class="SpatialiserEffect" id="{800d8e68-54ad-415e-87cd-565718b5e6ab}" />
 	<object class="SFXReverbEffect" id="{b472406a-0750-4d47-b9f0-4bc251a4aaaa}">
 		<property name="wetLevel">
 			<value>-15</value>
