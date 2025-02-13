@@ -61,15 +61,19 @@ public class CanvasSwitcher : MonoBehaviour
         endCanvas.SetActive(true);
     }
 
-    private void SwitchToWelcome()
+    public void SwitchToWelcome()
     {
         // Cancella tutti i dati salvati e torna al canvas di benvenuto
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.Save(); 
+        //PlayerPrefs.DeleteAll();
+        //PlayerPrefs.Save(); 
 
         Debug.Log("[CanvasSwitcher] Tutti i dati sono stati cancellati. Nuovo inizio.");
         
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.UnloadSceneAsync("Minigioco_2").completed += (AsyncOperation op) =>
+        {
+            SceneManager.LoadSceneAsync("Minigioco_2", LoadSceneMode.Additive);
+        };
     }
 
     private void ResetFusionCanvas()

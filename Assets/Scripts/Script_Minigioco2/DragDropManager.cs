@@ -107,8 +107,8 @@ private void FineGiocoCanvas()
     }
 
     AggiornaProgressoStelle();
-    PlayerPrefs.SetInt("GiocoCompletato", 1);
-    PlayerPrefs.Save();
+    //PlayerPrefs.SetInt("GiocoCompletato", 1);
+    //PlayerPrefs.Save();
 }
 
 

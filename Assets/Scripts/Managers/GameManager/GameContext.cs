@@ -42,10 +42,10 @@ public class GameContext : MonoBehaviour
         _currentFloor = currentFloor;
     }
 
-    public void IncrementCounterLED()
-    {
-        _counterLED += 1;
-    }
+    //public void IncrementCounterLED()
+    //{
+    //    _counterLED += 1;
+    //}
 
     public void OnTimerFinished()
     {

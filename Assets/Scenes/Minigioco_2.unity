@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: d7dfe0d8a7fbdaa4b94ae4e535a86508, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1041,7 +1041,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 349623676}
-  - component: {fileID: 349623675}
   - component: {fileID: 349623673}
   - component: {fileID: 349623672}
   - component: {fileID: 349623671}
@@ -1129,18 +1128,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 5
   m_TargetDisplay: 0
---- !u!114 &349623675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349623669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ef73b27eb6d5b64b9ff9484e571cd79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &349623676
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1750,8 +1737,8 @@ GameObject:
   - component: {fileID: 637240912}
   - component: {fileID: 637240915}
   m_Layer: 0
-  m_Name: MainCamera
-  m_TagString: MainCamera
+  m_Name: SecondaryCamera
+  m_TagString: SecondaryCam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4059,7 +4046,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bc2931d01ea9104ab901f645394a180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Minigioco_2
+  secondaryCamera: {fileID: 0}
+  sceneToUnload: 
 --- !u!1 &1748482310
 GameObject:
   m_ObjectHideFlags: 0
@@ -4271,7 +4259,6 @@ GameObject:
   - component: {fileID: 1750285258}
   - component: {fileID: 1750285257}
   - component: {fileID: 1750285256}
-  - component: {fileID: 1750285259}
   m_Layer: 5
   m_Name: RiprovaButton
   m_TagString: Untagged
@@ -4380,19 +4367,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750285254}
   m_CullTransparentMesh: 1
---- !u!114 &1750285259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750285254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bc2931d01ea9104ab901f645394a180, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneToLoad: Minigioco_2
 --- !u!1 &1969911260
 GameObject:
   m_ObjectHideFlags: 0
@@ -4951,7 +4925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bc2931d01ea9104ab901f645394a180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Piano_-2
+  secondaryCamera: {fileID: 637240913}
+  sceneToUnload: Minigioco_2
 --- !u!1 &2061055608
 GameObject:
   m_ObjectHideFlags: 0

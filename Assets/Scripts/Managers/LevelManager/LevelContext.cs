@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LevelContext : MonoBehaviour
 {
-
     private GameContext _gameContext;
     public GameContext GameContext => _gameContext;
 

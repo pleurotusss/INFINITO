@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8898900356753375265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Risposta giusta
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Risposta giusta
-  Guid:
-    Data1: -1453621550
-    Data2: 1199673337
-    Data3: -1958850894
-    Data4: -756597411
-  Banks:
-  - {fileID: 7014033029311366974}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
 --- !u!114 &-8545639383024095026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,12 +21,39 @@ MonoBehaviour:
   Banks:
   - {fileID: 2173354796157720559}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &-8323877875323203878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musica/Command screen
+  m_EditorClassIdentifier: 
+  Path: event:/Musica/Command screen
+  Guid:
+    Data1: -2004083005
+    Data2: 1233642069
+    Data3: -1982198856
+    Data4: -477860842
+  Banks:
+  - {fileID: 7941114477747738187}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9600
 --- !u!114 &-7887808711843593615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +81,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 33166
+--- !u!114 &-7090289867907481259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Stelle centrale
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Stelle centrale
+  Guid:
+    Data1: -490074904
+    Data2: 1172825639
+    Data3: 937843361
+    Data4: 1200521459
+  Banks:
+  - {fileID: 8297376856582063274}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16000
 --- !u!114 &-5792408708228897206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,6 +290,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 38875
+--- !u!114 &-1014903230751822900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gioco Pianeta/Risposta giusta
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gioco Pianeta/Risposta giusta
+  Guid:
+    Data1: -1453621550
+    Data2: 1199673337
+    Data3: -1958850894
+    Data4: -756597411
+  Banks:
+  - {fileID: 7014033029311366974}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,8 +340,6 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 261656163488996039}
   - {fileID: 7497998921327287309}
-  - {fileID: 6919045828041953386}
-  - {fileID: -8898900356753375265}
   - {fileID: 7924832315973329236}
   - {fileID: -8545639383024095026}
   - {fileID: 138248450933888666}
@@ -309,12 +361,18 @@ MonoBehaviour:
   - {fileID: 8096909599503412567}
   - {fileID: 4456583244875458996}
   - {fileID: -7887808711843593615}
+  - {fileID: 7053498717258497501}
+  - {fileID: 454711246913069849}
+  - {fileID: -1014903230751822900}
+  - {fileID: 758662716899940479}
+  - {fileID: -8323877875323203878}
+  - {fileID: -7090289867907481259}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2721737609588525826}
   StringsBanks:
   - {fileID: 1059545621995762111}
-  cacheTime: 638749493907922615
+  cacheTime: 638750647055651634
   cacheVersion: 131622
 --- !u!114 &138248450933888666
 MonoBehaviour:
@@ -397,6 +455,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 29791
+--- !u!114 &454711246913069849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Gioco Pianeta/Risposta sbagliata
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Gioco Pianeta/Risposta sbagliata
+  Guid:
+    Data1: 1032298958
+    Data2: 1244313564
+    Data3: 2116165286
+    Data4: -2116943088
+  Banks:
+  - {fileID: 7014033029311366974}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &758662716899940479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Descrizioni/Muri-pianeti/Muro introduzione
+  m_EditorClassIdentifier: 
+  Path: event:/Descrizioni/Muri-pianeti/Muro introduzione
+  Guid:
+    Data1: -1376182482
+    Data2: 1305885707
+    Data3: -1247993155
+    Data4: 1383306347
+  Banks:
+  - {fileID: 2173354796157720559}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30333
 --- !u!114 &1059545621995762111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,10 +524,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638749493907590123
+  lastModified: 638750564809637674
   FileSizes:
   - Name: Desktop
-    Value: 2046
+    Value: 2240
   Exists: 1
 --- !u!114 &1216870282939814827
 MonoBehaviour:
@@ -513,10 +625,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Pianeti.bank
   Name: Pianeti
   StudioPath: bank:/Pianeti
-  lastModified: 638749493907712632
+  lastModified: 638750647055651634
   FileSizes:
   - Name: Desktop
-    Value: 4702464
+    Value: 5075360
   Exists: 1
 --- !u!114 &2616437179217418745
 MonoBehaviour:
@@ -695,38 +807,11 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Atrio.bank
   Name: Atrio
   StudioPath: bank:/Atrio
-  lastModified: 638749493907548805
+  lastModified: 638750564809527377
   FileSizes:
   - Name: Desktop
-    Value: 1960224
+    Value: 2299936
   Exists: 1
---- !u!114 &6919045828041953386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Risposta sbagliata
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Risposta sbagliata
-  Guid:
-    Data1: 1032298958
-    Data2: 1244313564
-    Data3: 2116165286
-    Data4: -2116943088
-  Banks:
-  - {fileID: 7014033029311366974}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
 --- !u!114 &7014033029311366974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -742,11 +827,38 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/General.bank
   Name: General
   StudioPath: bank:/General
-  lastModified: 638749493907548805
+  lastModified: 638750647055182976
   FileSizes:
   - Name: Desktop
-    Value: 257600
+    Value: 257344
   Exists: 1
+--- !u!114 &7053498717258497501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Apertura cupola
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Apertura cupola
+  Guid:
+    Data1: 687584739
+    Data2: 1082824211
+    Data3: 1048529324
+    Data4: -1142409178
+  Banks:
+  - {fileID: 6836628196006415046}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 27500
 --- !u!114 &7497998921327287309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,7 +884,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 3
   Length: 19200
 --- !u!114 &7924832315973329236
 MonoBehaviour:
@@ -795,7 +907,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 2173354796157720559}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -816,10 +928,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Schermata di blocco.bank
   Name: Schermata di blocco
   StudioPath: bank:/Schermata di blocco
-  lastModified: 638749493907756032
+  lastModified: 638750564810011615
   FileSizes:
   - Name: Desktop
-    Value: 866048
+    Value: 947424
   Exists: 1
 --- !u!114 &8096909599503412567
 MonoBehaviour:
@@ -863,8 +975,8 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Stelle.bank
   Name: Stelle
   StudioPath: bank:/Stelle
-  lastModified: 638749493907922615
+  lastModified: 638750564810347870
   FileSizes:
   - Name: Desktop
-    Value: 5440864
+    Value: 5489792
   Exists: 1

@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using StarterAssets;
 using UnityEditor;
 using UnityEngine;
+using static UnityEditor.Profiling.RawFrameDataView;
 
 public class MaterialAssociation : MonoBehaviour
 {
@@ -10,8 +12,8 @@ public class MaterialAssociation : MonoBehaviour
     private LevelContext _levelContext;
 
     public Transform holdPoint; // Punto di tenuta per il materiale
-    public AudioClip correctSound;
-    public AudioClip wrongSound;
+    public EventReference correctSound;
+    public EventReference wrongSound;
     public float grabRange = 5f; // Distanza alla quale il materiale può essere preso
     private Transform heldMaterial; // Materiale che stiamo tenendo
     private AudioSource audioSource;
@@ -29,8 +31,10 @@ public class MaterialAssociation : MonoBehaviour
     private Dictionary<Transform, Quaternion> materialStartRotation = new Dictionary<Transform, Quaternion>();
     public GraphicsManager graphicsManager; // Riferimento alle grafiche
 
-    public AudioClip pickUpSound; // Nuovo suono per la raccolta del materiale
-    public AudioClip putBackSound; // Nuovo suono per rimettere il materiale al suo posto
+    // Nuovo suono per la raccolta del materiale
+    // Nuovo suono per rimettere il materiale al suo posto
+    public EventReference pickupSound;
+    public EventReference putBackSound;
 
     void Awake()
     {
@@ -193,12 +197,9 @@ void GrabMaterial()
 
             heldMaterial.localPosition = Vector3.zero; // Posiziona al centro del holdPoint
             heldMaterial.localRotation = Quaternion.identity; // Evita rotazioni strane
-            
-            if (audioSource != null && pickUpSound != null)
-            {
-                audioSource.PlayOneShot(pickUpSound);
+
+                FMODUnity.RuntimeManager.PlayOneShot(pickupSound);
             }
-        }
     }
 }
 
@@ -233,14 +234,11 @@ void DropMaterial()
                         Debug.LogWarning($"Fessura non trovata per {heldMaterial.name}");
                     }
 
-                    // Suona il suono corretto e mostra la grafica
-                    if (audioSource != null && correctSound != null)
-                    {
-                        audioSource.PlayOneShot(correctSound);
-                    }
+                        // Suona il suono corretto e mostra la grafica
+                        FMODUnity.RuntimeManager.PlayOneShot(correctSound);
 
-                    // Libera il riferimento al materiale
-                    heldMaterial = null;
+                        // Libera il riferimento al materiale
+                        heldMaterial = null;
 
                     // Notifico al LevelManager lo stato del minigioco
                     _levelContext.IncrementCounterPlanetsFloor();
@@ -256,13 +254,10 @@ void DropMaterial()
                 else
                 {
                     Debug.Log("Materiale errato!");
-                    if (audioSource != null && wrongSound != null)
-                    {
-                        audioSource.PlayOneShot(wrongSound);
-                    }
+                        FMODUnity.RuntimeManager.PlayOneShot(wrongSound);
 
-                    // Il materiale deve rimanere in mano
-                    return;
+                        // Il materiale deve rimanere in mano
+                        return;
                 }
             }
         }
@@ -313,10 +308,11 @@ void DropMaterial()
             heldMaterial.SetParent(null); // Rimuove il materiale dal punto di tenuta
             heldMaterial = null; // Libera il materiale
 
-             if (audioSource != null && putBackSound != null)
-    {
-        audioSource.PlayOneShot(putBackSound);
-    }
+
+
+            FMODUnity.RuntimeManager.PlayOneShot(putBackSound);
+
+
         }
     }
 }

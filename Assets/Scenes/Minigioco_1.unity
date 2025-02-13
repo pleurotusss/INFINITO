@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 345b3a6375704944e9addad2f189a98b, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -255,7 +255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bc2931d01ea9104ab901f645394a180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: MasterPlanetario
+  secondaryCamera: {fileID: 963194227}
+  sceneToUnload: Minigioco_1
 --- !u!1 &31932821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,7 +1100,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240688328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.0204}
+  m_LocalPosition: {x: 0, y: 0, z: 140.9796}
   m_LocalScale: {x: 0.01165, y: 0.01165, z: 0.01165}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1656,7 +1657,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 963194227}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1677,7 +1678,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424500042}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.0204}
+  m_LocalPosition: {x: 0, y: 0, z: 140.9796}
   m_LocalScale: {x: 0.01165, y: 0.01165, z: 0.01165}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2279,7 +2280,7 @@ Transform:
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2425,7 +2426,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 963194227}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2446,7 +2447,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902751273}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.0204}
+  m_LocalPosition: {x: 0, y: 0, z: 140.9796}
   m_LocalScale: {x: 0.01165, y: 0.01165, z: 0.01165}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2757,8 +2758,8 @@ GameObject:
   - component: {fileID: 963194230}
   - component: {fileID: 963194229}
   m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
+  m_Name: SecondaryCamera
+  m_TagString: SecondaryCam
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2831,7 +2832,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.1, z: -41.7}
+  m_LocalPosition: {x: 0, y: -0.1, z: 104.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3174,7 +3175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c69db3374aab874e94dc51c23550d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Minigioco_1
+  sceneToLoad: 
 --- !u!1 &993107017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4203,7 +4204,7 @@ Transform:
   m_GameObject: {fileID: 1453106891}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.25, y: 0.81723434, z: -4.557017}
+  m_LocalPosition: {x: -4.25, y: 0.81723434, z: 141.44298}
   m_LocalScale: {x: 2.481713, y: 2.481713, z: 2.481713}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4833,7 +4834,7 @@ Transform:
   m_GameObject: {fileID: 1658468056}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5687,7 +5688,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960935321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.0204}
+  m_LocalPosition: {x: 0, y: 0, z: 140.9796}
   m_LocalScale: {x: 0.01165, y: 0.01165, z: 0.01165}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5800,7 +5801,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1968637217}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 240688334}
+        m_TargetAssemblyTypeName: CanvasSwitcher, Assembly-CSharp
+        m_MethodName: SwitchToWelcome
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1968637217
 MonoBehaviour:
   m_ObjectHideFlags: 0
