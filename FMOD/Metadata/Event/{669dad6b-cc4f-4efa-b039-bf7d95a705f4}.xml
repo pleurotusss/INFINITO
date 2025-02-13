@@ -5,7 +5,7 @@
 			<value>Muro Terra</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{a0f8d261-80e0-4695-a135-3ab0a5adfe7e}</destination>
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{27c594de-1cd1-453b-9e2d-2deb71272753}">
 		<relationship name="effects">
 			<destination>{3519790c-6072-4b6b-874e-04f9fd7d8b1a}</destination>
-			<destination>{691c10ac-25f3-434f-94b1-8ed0024ca18f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4c180621-0e2e-4db4-ac2c-e4e13b0cfc8a}" />
@@ -130,7 +129,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{44fd46d5-b4a6-421f-b089-7e1d2d47cb15}" />
 	<object class="MixerBusFader" id="{3519790c-6072-4b6b-874e-04f9fd7d8b1a}" />
-	<object class="SpatialiserEffect" id="{691c10ac-25f3-434f-94b1-8ed0024ca18f}" />
 	<object class="SFXReverbEffect" id="{faa3dfe7-d1c6-443b-9a8d-fe406d69f241}">
 		<property name="wetLevel">
 			<value>-15</value>
