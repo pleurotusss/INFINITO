@@ -1026,6 +1026,37 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &673893730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673893723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1434054670
+      Data2: 1276263306
+      Data3: 1348877751
+      Data4: 732751765
+    Path: event:/SFX/Oggetto grabbato
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &694027711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,6 +1992,37 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &1163827463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163827455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1434054670
+      Data2: 1276263306
+      Data3: 1348877751
+      Data4: 732751765
+    Path: event:/SFX/Oggetto grabbato
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1217305658 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3412803995641264900, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
@@ -2037,6 +2099,37 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &1217305665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217305658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1434054670
+      Data2: 1276263306
+      Data3: 1348877751
+      Data4: 732751765
+    Path: event:/SFX/Oggetto grabbato
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1353278513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2050,7 +2143,7 @@ GameObject:
   - component: {fileID: 1353278515}
   - component: {fileID: 1353278517}
   m_Layer: 0
-  m_Name: LevelManager
+  m_Name: MaterialManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2211,7 +2304,7 @@ MonoBehaviour:
     Path: event:/Music-Pianeti
   Event: 
   EventPlayTrigger: 1
-  EventStopTrigger: 0
+  EventStopTrigger: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -2544,6 +2637,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -3412803995641264900, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1217305664}
+    - targetCorrespondingSourceObject: {fileID: -3412803995641264900, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1217305665}
     - targetCorrespondingSourceObject: {fileID: -3689563816557196733, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1620492700}
@@ -2553,6 +2649,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -3689563816557196733, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1620492703}
+    - targetCorrespondingSourceObject: {fileID: -3689563816557196733, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1620492704}
     - targetCorrespondingSourceObject: {fileID: -2105905970154897016, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1163827460}
@@ -2562,6 +2661,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2105905970154897016, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1163827462}
+    - targetCorrespondingSourceObject: {fileID: -2105905970154897016, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1163827463}
     - targetCorrespondingSourceObject: {fileID: -3480194908027450359, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 673893728}
@@ -2571,6 +2673,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -3480194908027450359, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 673893729}
+    - targetCorrespondingSourceObject: {fileID: -3480194908027450359, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 673893730}
     - targetCorrespondingSourceObject: {fileID: 5152589247783857313, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1597956565}
@@ -2580,6 +2685,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5152589247783857313, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1597956566}
+    - targetCorrespondingSourceObject: {fileID: 5152589247783857313, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1597956568}
     - targetCorrespondingSourceObject: {fileID: -8678334890876928072, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1414411382}
@@ -2589,6 +2697,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8678334890876928072, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1414411383}
+    - targetCorrespondingSourceObject: {fileID: -8678334890876928072, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1414411384}
     - targetCorrespondingSourceObject: {fileID: -226715522987233699, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2102532477}
@@ -2598,6 +2709,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -226715522987233699, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2102532478}
+    - targetCorrespondingSourceObject: {fileID: -226715522987233699, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2102532479}
     - targetCorrespondingSourceObject: {fileID: 7380479198774076915, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1673696317}
@@ -2607,6 +2721,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7380479198774076915, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1673696318}
+    - targetCorrespondingSourceObject: {fileID: 7380479198774076915, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1673696319}
   m_SourcePrefab: {fileID: 100100000, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
 --- !u!1 &1414411377 stripped
 GameObject:
@@ -2684,6 +2801,37 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &1414411384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414411377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1434054670
+      Data2: 1276263306
+      Data3: 1348877751
+      Data4: 732751765
+    Path: event:/SFX/Oggetto grabbato
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1480467051 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fd959632b0ba51a499f72446972418a8, type: 3}
@@ -2828,6 +2976,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4926265976806499526, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
   m_PrefabInstance: {fileID: 1373324300}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1597956568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597956560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1434054670
+      Data2: 1276263306
+      Data3: 1348877751
+      Data4: 732751765
+    Path: event:/SFX/Oggetto grabbato
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1616980289
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,6 +3189,37 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &1620492704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620492697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1434054670
+      Data2: 1276263306
+      Data3: 1348877751
+      Data4: 732751765
+    Path: event:/SFX/Oggetto grabbato
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1673696312 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7380479198774076915, guid: 2cab3b5eca3d079449b59e2208fd3d34, type: 3}
@@ -3086,6 +3296,37 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &1673696319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673696312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1434054670
+      Data2: 1276263306
+      Data3: 1348877751
+      Data4: 732751765
+    Path: event:/SFX/Oggetto grabbato
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!54 &1685277239
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3641,6 +3882,37 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &2102532479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102532472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1434054670
+      Data2: 1276263306
+      Data3: 1348877751
+      Data4: 732751765
+    Path: event:/SFX/Oggetto grabbato
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!23 &26958597454088900
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3780,6 +4052,7 @@ GameObject:
   - component: {fileID: 3903601579326166359}
   - component: {fileID: 3376043075692288393}
   - component: {fileID: 3903601579326166360}
+  - component: {fileID: 3903601579326166361}
   m_Layer: 0
   m_Name: Urano
   m_TagString: Slot
@@ -4552,6 +4825,7 @@ GameObject:
   - component: {fileID: 6948864379114357519}
   - component: {fileID: 8162149734580978300}
   - component: {fileID: 8162149734580978301}
+  - component: {fileID: 8162149734580978302}
   m_Layer: 0
   m_Name: Venere
   m_TagString: Slot
@@ -5543,6 +5817,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.013836909, y: 0.01060764, z: 0.014567695}
   m_Center: {x: 0.00079858664, y: -0.00000019787863, z: 0.00056189415}
+--- !u!114 &3903601579326166361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150661373919111828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1453621550
+      Data2: 1199673337
+      Data3: -1958850894
+      Data4: -756597411
+    Path: event:/SFX/Risposta giusta
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!33 &3944428389714069264
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5745,6 +6050,7 @@ GameObject:
   - component: {fileID: 298864193001723700}
   - component: {fileID: 1466090774083269055}
   - component: {fileID: 4597045552181594646}
+  - component: {fileID: 4597045552181594647}
   m_Layer: 0
   m_Name: Giove
   m_TagString: Slot
@@ -5994,6 +6300,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011917824, y: 0.011874299, z: 0.013295317}
   m_Center: {x: -0.0001609552, y: 0.00063312985, z: -0.00007429598}
+--- !u!114 &4597045552181594647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4069695663800608612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1453621550
+      Data2: 1199673337
+      Data3: -1958850894
+      Data4: -756597411
+    Path: event:/SFX/Risposta giusta
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!33 &4611306005413492487
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6234,6 +6571,7 @@ GameObject:
   - component: {fileID: 6826034215378705401}
   - component: {fileID: 5256686329587539694}
   - component: {fileID: 6826034215378705402}
+  - component: {fileID: 6826034215378705403}
   m_Layer: 0
   m_Name: Mercurio
   m_TagString: Slot
@@ -6647,7 +6985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1abec0ef088fb4db23015de9d67b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationPeriodHours: 16.1
+  rotationPeriodHours: 0
   axialTilt: 0
   minRotationSpeed: 5
   maxRotationSpeed: 50
@@ -6869,6 +7207,7 @@ GameObject:
   - component: {fileID: 448577299882436121}
   - component: {fileID: 5635435950794845625}
   - component: {fileID: 6161045303344048258}
+  - component: {fileID: 6161045303344048259}
   m_Layer: 0
   m_Name: Saturno
   m_TagString: Slot
@@ -6897,6 +7236,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.013379577, y: 0.011564395, z: 0.01340298}
   m_Center: {x: 0.00056991936, y: 0.00047817413, z: -0.00002046287}
+--- !u!114 &6161045303344048259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6161045303344048257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1453621550
+      Data2: 1199673337
+      Data3: -1958850894
+      Data4: -756597411
+    Path: event:/SFX/Risposta giusta
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!23 &6183892391005564913
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7191,6 +7561,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.016288843, y: 0.0034759631, z: 0.013487651}
   m_Center: {x: -0.0030462174, y: 0.0058981422, z: 0.000055497883}
+--- !u!114 &6826034215378705403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5244974187865878358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1453621550
+      Data2: 1199673337
+      Data3: -1958850894
+      Data4: -756597411
+    Path: event:/SFX/Risposta giusta
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!23 &6826094284230839616
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7368,6 +7769,7 @@ GameObject:
   - component: {fileID: 7728847792323467741}
   - component: {fileID: 2538516940597847750}
   - component: {fileID: 7728847792323467742}
+  - component: {fileID: 7728847792323467743}
   m_Layer: 0
   m_Name: Marte
   m_TagString: Slot
@@ -7494,6 +7896,7 @@ GameObject:
   - component: {fileID: 6383582015017005465}
   - component: {fileID: 2464794345316869333}
   - component: {fileID: 7244046198432525109}
+  - component: {fileID: 7244046198432525110}
   m_Layer: 0
   m_Name: Terra
   m_TagString: Slot
@@ -7522,6 +7925,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.015114782, y: 0.010593101, z: 0.013280611}
   m_Center: {x: -0.0022635139, y: 0.0000000036719123, z: -0.000048028825}
+--- !u!114 &7244046198432525110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244046198432525108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1453621550
+      Data2: 1199673337
+      Data3: -1958850894
+      Data4: -756597411
+    Path: event:/SFX/Risposta giusta
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!23 &7310346583269047016
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7744,6 +8178,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.010587774, y: 0.010593101, z: 0.013280611}
   m_Center: {x: -1.7706302e-12, y: 6.6489683e-12, z: -0.000048028538}
+--- !u!114 &7728847792323467743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064586839171917283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1453621550
+      Data2: 1199673337
+      Data3: -1958850894
+      Data4: -756597411
+    Path: event:/SFX/Risposta giusta
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &7742191871290073754
 Transform:
   m_ObjectHideFlags: 0
@@ -7771,6 +8236,7 @@ GameObject:
   - component: {fileID: 3675918034615351716}
   - component: {fileID: 1831382188660078948}
   - component: {fileID: 7904075087981402426}
+  - component: {fileID: 7904075087981402427}
   m_Layer: 0
   m_Name: Nettuno
   m_TagString: Slot
@@ -7799,6 +8265,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011792204, y: 0.01060764, z: 0.01458485}
   m_Center: {x: -0.00022376956, y: -0.00000019848562, z: 0.00057047186}
+--- !u!114 &7904075087981402427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7904075087981402425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1453621550
+      Data2: 1199673337
+      Data3: -1958850894
+      Data4: -756597411
+    Path: event:/SFX/Risposta giusta
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &7929245535816472159
 GameObject:
   m_ObjectHideFlags: 0
@@ -7938,6 +8435,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.014552823, y: 0.008562783, z: 0.01449883}
   m_Center: {x: -0.000320264, y: 0.001141445, z: -0.00061798096}
+--- !u!114 &8162149734580978302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816259849890752367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1453621550
+      Data2: 1199673337
+      Data3: -1958850894
+      Data4: -756597411
+    Path: event:/SFX/Risposta giusta
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &8275114415926056823
 Transform:
   m_ObjectHideFlags: 0
@@ -8534,6 +9062,7 @@ GameObject:
   - component: {fileID: 5303715743622683673}
   - component: {fileID: 7541390795633110647}
   - component: {fileID: 8836122889362859094}
+  - component: {fileID: 8996656514432899777}
   m_Layer: 0
   m_Name: Urano_Pianeta
   m_TagString: Pianeta
@@ -8541,6 +9070,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8996656514432899777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8996656514432899776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1abec0ef088fb4db23015de9d67b2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPeriodHours: 0
+  axialTilt: 0
+  minRotationSpeed: 5
+  maxRotationSpeed: 50
 --- !u!4 &9049920138910746370
 Transform:
   m_ObjectHideFlags: 0

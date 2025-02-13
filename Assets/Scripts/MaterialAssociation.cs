@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class MaterialAssociation : MonoBehaviour
 {
+    public static MaterialAssociation Instance { get; private set; }
+    private LevelContext _levelContext;
+
     public Transform holdPoint; // Punto di tenuta per il materiale
     public AudioClip correctSound;
     public AudioClip wrongSound;
@@ -15,7 +18,7 @@ public class MaterialAssociation : MonoBehaviour
     private int originalLayer;
     private const int IgnoreRaycastLayer = 2;
 
-    private int correctMaterials = 0; // Contatore dei materiali corretti
+    //private int correctMaterials = 0; // Contatore dei materiali corretti
     public int totalMaterials = 8; // Numero totale di materiali da posizionare
     public string cutsceneSceneName = "CutsceneScene"; // Nome della scena della cutscene
 
@@ -29,8 +32,26 @@ public class MaterialAssociation : MonoBehaviour
     public AudioClip pickUpSound; // Nuovo suono per la raccolta del materiale
     public AudioClip putBackSound; // Nuovo suono per rimettere il materiale al suo posto
 
+    void Awake()
+    {
+        // Implementazione Singleton per evitare duplicati
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject); // Se esiste già un'istanza, distruggi quella nuova
+            return;
+        }
+
+        _levelContext = FindObjectOfType<LevelContext>();
+    }
+
     void Start()
     {
+
         audioSource = GetComponent<AudioSource>();
 
         // Registra gli slot disponibili nella teca
@@ -92,33 +113,33 @@ public class MaterialAssociation : MonoBehaviour
 
 
     void Update()
-{
-    CheckForSelectableMaterials();
-    if (Input.GetMouseButtonDown(0)) // Tasto sinistro per raccogliere o rilasciare normalmente
     {
-        if (heldMaterial == null)
+        CheckForSelectableMaterials();
+        if (Input.GetMouseButtonDown(0)) // Tasto sinistro per raccogliere o rilasciare normalmente
         {
-            GrabMaterial();
+            if (heldMaterial == null)
+            {
+                GrabMaterial();
+            }
+            else
+            {
+                DropMaterial();
+            }
         }
-        else
-        {
-            DropMaterial();
-        }
-    }
 
-    if (Input.GetMouseButtonDown(1)) // Tasto destro per rimettere l'oggetto al suo posto
-    {
-        if (heldMaterial != null)
+        if (Input.GetMouseButtonDown(1)) // Tasto destro per rimettere l'oggetto al suo posto
         {
-            PutMaterialBack();
+            if (heldMaterial != null)
+            {
+                PutMaterialBack();
+            }
+        }
+
+        if (heldMaterial != null) // Se il materiale è in mano
+        {
+            MoveMaterial(); // Mantieni il materiale al punto di tenuta
         }
     }
-
-    if (heldMaterial != null) // Se il materiale è in mano
-    {
-        MoveMaterial(); // Mantieni il materiale al punto di tenuta
-    }
-}
 
 
     void PutMaterialBack()
@@ -220,14 +241,17 @@ void DropMaterial()
 
                     // Libera il riferimento al materiale
                     heldMaterial = null;
-                    correctMaterials++;
 
-                    if (correctMaterials == totalMaterials)
-                    {
-                        Debug.Log("Tutti i materiali sono stati posizionati correttamente!");
-                        LoadCutScene();
-                    }
-                    return;
+                    // Notifico al LevelManager lo stato del minigioco
+                    _levelContext.IncrementCounterPlanetsFloor();
+                    //correctMaterials++;
+
+                    //if (correctMaterials == totalMaterials)
+                    //{
+                    //    Debug.Log("Tutti i materiali sono stati posizionati correttamente!");
+                    //    LoadCutScene();
+                    //}
+                    //return;
                 }
                 else
                 {

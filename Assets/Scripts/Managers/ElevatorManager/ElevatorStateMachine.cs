@@ -23,7 +23,6 @@ public class ElevatorStateMachine : BaseStateManager<ElevatorStateMachine.EEleva
 
         InitializeStates();
     }
-
     
     private void ValidateCostrains()
     {
@@ -41,10 +40,6 @@ public class ElevatorStateMachine : BaseStateManager<ElevatorStateMachine.EEleva
         _elevatorContext.Loader();
         CurrentState = States[EElevatorStateMachine.Idle];
 
-        //if (!GameManager.Instance.PlayerUsedElevator)
-        //    CurrentState = States[EElevatorStateMachine.Idle];
-        //else
-        //    CurrentState = States[EElevatorStateMachine.Arrived];
     }
 
     internal ElevatorContext GetContext()

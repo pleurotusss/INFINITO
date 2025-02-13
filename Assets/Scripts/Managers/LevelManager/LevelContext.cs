@@ -8,24 +8,27 @@ public class LevelContext : MonoBehaviour
     private GameContext _gameContext;
     public GameContext GameContext => _gameContext;
 
-    private int _CounterPlanetsFloor;
-    private int _CounterStarsFloor;
+    private int _counterPlanetsFloor;
+    private int _counterStarsFloor;
 
-    public int CounterPlanetsFloor => _CounterPlanetsFloor;
-    public int CounterStarsFloor => _CounterStarsFloor;
+    public int CounterPlanetsFloor => _counterPlanetsFloor;
+    public int CounterStarsFloor => _counterStarsFloor;
 
     public void Initialize() 
     {
-        _CounterPlanetsFloor = 0;
-        _CounterStarsFloor = 0;
+        _counterPlanetsFloor = 0;
+        _counterStarsFloor = 0;
         _gameContext = FindObjectOfType<GameContext>();
     }
-
-
-    private void Update()
+    
+    public void IncrementCounterPlanetsFloor()
     {
-        if (_CounterPlanetsFloor == 8) _gameContext.IncrementCounterLED();
-        if (_CounterStarsFloor == 2) _gameContext.IncrementCounterLED();
+        _counterPlanetsFloor++;
+        if (_counterPlanetsFloor == 8) GameContext.PlanetsFloorIsComplete();
     }
-
+    public void IncrementCounterStarsFloor()
+    {
+        _counterStarsFloor++;
+        if (_counterStarsFloor == 2) GameContext.StarsFloorIsComplete();
+    }
 }

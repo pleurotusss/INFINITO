@@ -31,7 +31,7 @@ public class StarsState : LevelState
                 break;
             case "Piano-2":
                 Debug.Log("LEVEL MANAGER --- STANZA STELLE");
-                _nextState = LevelStateMachine.ELevelStateMachine.StartState;
+                _nextState = LevelStateMachine.ELevelStateMachine.StarsLevel;
                 break;
             case "Piano_-3":
                 Debug.Log("LEVEL MANAGER --- STANZA RELATIVITÀ");
