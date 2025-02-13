@@ -12,10 +12,7 @@ public class PlanetsState : LevelState
 
     private LevelStateMachine.ELevelStateMachine _nextState;
 
-    public override void EnterState()
-    {
-        
-    }
+    public override void EnterState() { }
 
     public override void UpdateState() { }
 
@@ -31,7 +28,7 @@ public class PlanetsState : LevelState
                 break;
             case "Piano-2":
                 Debug.Log("LEVEL MANAGER --- STANZA STELLE");
-                _nextState = LevelStateMachine.ELevelStateMachine.StartState;
+                _nextState = LevelStateMachine.ELevelStateMachine.StarsLevel;
                 break;
             case "Piano_-3":
                 Debug.Log("LEVEL MANAGER --- STANZA RELATIVITÀ");

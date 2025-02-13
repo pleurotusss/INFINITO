@@ -1,4 +1,4 @@
-using UnityEngine;
+sing UnityEngine;
 using UnityEngine.SceneManagement;  // Necessario per gestire il cambio di scena
 
 public class GameManager : MonoBehaviour

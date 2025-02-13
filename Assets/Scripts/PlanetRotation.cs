@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlanetRotation : MonoBehaviour
 {
@@ -49,6 +50,11 @@ public class PlanetRotation : MonoBehaviour
         rotationAxisObject = new GameObject(gameObject.name + "_Axis").transform;
         rotationAxisObject.position = transform.position;
         rotationAxisObject.rotation = Quaternion.Euler(axialTilt, 0, 0); // Inclina l'asse
+
+        // Sposta il nuovo oggetto nella stessa scena del pianeta
+        SceneManager.MoveGameObjectToScene(rotationAxisObject.gameObject, gameObject.scene);
+
+        // Imposta il parent
         transform.parent = rotationAxisObject; // Il pianeta ruoterà attorno a questo oggetto
     }
 

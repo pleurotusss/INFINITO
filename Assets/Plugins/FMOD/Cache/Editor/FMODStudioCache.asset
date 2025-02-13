@@ -150,7 +150,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638749567419891179
+  lastModified: 638749493907548805
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -314,7 +314,7 @@ MonoBehaviour:
   - {fileID: -2721737609588525826}
   StringsBanks:
   - {fileID: 1059545621995762111}
-  cacheTime: 638749567420474873
+  cacheTime: 638749493907922615
   cacheVersion: 131622
 --- !u!114 &138248450933888666
 MonoBehaviour:
@@ -412,7 +412,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638749567419911248
+  lastModified: 638749493907590123
   FileSizes:
   - Name: Desktop
     Value: 2046
@@ -513,7 +513,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Pianeti.bank
   Name: Pianeti
   StudioPath: bank:/Pianeti
-  lastModified: 638749567420102070
+  lastModified: 638749493907712632
   FileSizes:
   - Name: Desktop
     Value: 4702464
@@ -695,7 +695,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Atrio.bank
   Name: Atrio
   StudioPath: bank:/Atrio
-  lastModified: 638749567419864409
+  lastModified: 638749493907548805
   FileSizes:
   - Name: Desktop
     Value: 1960224
@@ -742,7 +742,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/General.bank
   Name: General
   StudioPath: bank:/General
-  lastModified: 638749567419891179
+  lastModified: 638749493907548805
   FileSizes:
   - Name: Desktop
     Value: 257600
@@ -816,7 +816,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Schermata di blocco.bank
   Name: Schermata di blocco
   StudioPath: bank:/Schermata di blocco
-  lastModified: 638749567420197135
+  lastModified: 638749493907756032
   FileSizes:
   - Name: Desktop
     Value: 866048
@@ -863,7 +863,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Stelle.bank
   Name: Stelle
   StudioPath: bank:/Stelle
-  lastModified: 638749567420474873
+  lastModified: 638749493907922615
   FileSizes:
   - Name: Desktop
     Value: 5440864
