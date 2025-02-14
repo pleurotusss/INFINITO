@@ -31,14 +31,20 @@ public class ChangeSceneOnClick : MonoBehaviour
         }
 
         // Controlla se esiste una camera con il tag "Secondary Cam"
-        if (GameObject.FindGameObjectWithTag("SecondaryCam") == null)
+        //if (GameObject.FindGameObjectWithTag("SecondaryCam") == null)
+        //{
+        //    sceneLoaded = false;
+        //    mainCamera.gameObject.SetActive(true);
+        //}
+        if (GameObject.Find("SecondaryCamera") == null)
         {
             sceneLoaded = false;
             mainCamera.gameObject.SetActive(true);
         }
+
     }
 
-    
+
     IEnumerator LoadScene()
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);

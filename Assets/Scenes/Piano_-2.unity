@@ -201,8 +201,218 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -3973107660126017756, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 367214633}
+    - targetCorrespondingSourceObject: {fileID: -3973107660126017756, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 367214632}
+    - targetCorrespondingSourceObject: {fileID: 6471496338278676438, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 367214636}
+    - targetCorrespondingSourceObject: {fileID: 6471496338278676438, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 367214635}
+    - targetCorrespondingSourceObject: {fileID: -3556817346404478780, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 441422117}
+    - targetCorrespondingSourceObject: {fileID: -3556817346404478780, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 441422116}
+    - targetCorrespondingSourceObject: {fileID: 2238249416642749085, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1862227209}
+    - targetCorrespondingSourceObject: {fileID: 2238249416642749085, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1862227208}
+    - targetCorrespondingSourceObject: {fileID: 2909334989756356583, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 860380823}
+    - targetCorrespondingSourceObject: {fileID: 2909334989756356583, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 860380822}
+    - targetCorrespondingSourceObject: {fileID: -1840680963563420374, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1206376254}
+    - targetCorrespondingSourceObject: {fileID: -1840680963563420374, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1206376253}
   m_SourcePrefab: {fileID: 100100000, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+--- !u!1 &367214631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3973107660126017756, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+  m_PrefabInstance: {fileID: 367214630}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &367214632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367214631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1208544341
+      Data2: 1145351911
+      Data3: 686753412
+      Data4: 1999069021
+    Path: event:/Descrizioni/Muri-stelle/Muro stelle 1
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!64 &367214633
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367214631}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1562275218897716241, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+--- !u!1 &367214634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6471496338278676438, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+  m_PrefabInstance: {fileID: 367214630}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &367214635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367214634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1977107441
+      Data2: 1138585409
+      Data3: -652407645
+      Data4: -648527704
+    Path: event:/Descrizioni/Muri-stelle/Muro stelle 2
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!64 &367214636
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367214634}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7969978266939365281, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+--- !u!1 &441422115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3556817346404478780, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+  m_PrefabInstance: {fileID: 367214630}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &441422116
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441422115}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5582133695706433325, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+--- !u!114 &441422117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441422115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2075990845
+      Data2: 1247608953
+      Data3: -888115567
+      Data4: 786128033
+    Path: event:/Descrizioni/Muri-stelle/Muro stelle 3
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &463694477
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +581,119 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &733288126
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2410203329229351035, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_Name
+      value: NPC_Dialogues
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201163533471647244, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+--- !u!114 &733288127 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 331568373182243884, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+  m_PrefabInstance: {fileID: 733288126}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &733288128 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6360714703496325121, guid: 869bc2cf752f22b46bac37a2f31b2b6f, type: 3}
+  m_PrefabInstance: {fileID: 733288126}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &813623404
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +762,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &860380821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2909334989756356583, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+  m_PrefabInstance: {fileID: 367214630}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &860380822
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860380821}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7502377544057204969, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+--- !u!114 &860380823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860380821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 155862353
+      Data2: 1162685417
+      Data3: 951305861
+      Data4: -658697137
+    Path: event:/Descrizioni/Muri-stelle/Muro stelle 5
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &913601157
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,6 +926,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1206376252 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1840680963563420374, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+  m_PrefabInstance: {fileID: 367214630}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1206376253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206376252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1981796808
+      Data2: 1297793487
+      Data3: 1436729498
+      Data4: 829083695
+    Path: event:/Descrizioni/Muri-stelle/Muro stelle 6
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!64 &1206376254
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206376252}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -888404026515264504, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
 --- !u!1 &1207638399 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4182035304342577899, guid: b1da4b25a59db0d478b434e2a45e4069, type: 3}
@@ -597,6 +1036,64 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.00084690854, y: 0.0065126726, z: 0.019997858}
   m_Center: {x: 0.000109982815, y: 0.000032138076, z: -0.0012055864}
+--- !u!1 &1862227207 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2238249416642749085, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
+  m_PrefabInstance: {fileID: 367214630}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1862227208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862227207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2019082979
+      Data2: 1192395965
+      Data3: -475444570
+      Data4: -675182376
+    Path: event:/Descrizioni/Muri-stelle/Muro stelle 4
+  Event: 
+  EventPlayTrigger: 15
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!64 &1862227209
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862227207}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2628482395200241503, guid: 2d259253bb1b84140a4597c44fdb0976, type: 3}
 --- !u!1 &1919403976 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7360380730591242543, guid: b1da4b25a59db0d478b434e2a45e4069, type: 3}
@@ -623,6 +1120,105 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0008469086, y: 0.02240945, z: 0.019997854}
   m_Center: {x: 0.00010998282, y: 0.000032136675, z: -0.0012055861}
+--- !u!1001 &1926140024
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 537193067185977156, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 537193067185977156, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.827
+      objectReference: {fileID: 0}
+    - target: {fileID: 537193067185977156, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 537193067185977156, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9987524
+      objectReference: {fileID: 0}
+    - target: {fileID: 537193067185977156, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 537193067185977156, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.049936898
+      objectReference: {fileID: 0}
+    - target: {fileID: 537193067185977156, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 537193067185977156, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 537193067185977156, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 5.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 537193067185977156, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 882615998436109822, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: m_Name
+      value: NPC_Robot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033898148069449409, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: hint
+      value: "Hai bisogno di aiuto? Esplora la stanza intorno a te, l\xEC troverai
+        tutto ci\xF2 che ti serve."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033898148069449409, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 733288128}
+    - target: {fileID: 8033898148069449409, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 733288127}
+    - target: {fileID: 8033898148069449409, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: completedGame
+      value: "Non c'\xE8 pi\xF9 niente da fare qui gi\xF9... Torna all'atrio per
+        una sorpresa!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033898148069449409, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: completedLevel
+      value: "Bravo hai completato l\u2019esplorazione! Ora puoi proseguire con le
+        altre stanze o tornare nell\u2019atrio."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033898148069449409, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033898148069449409, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: dialogues.Array.data[0]
+      value: "Eccoci al secondo piano, quello delle stelle! In questa stanza ci sono
+        due display su cui svolgere due attivit\xE0."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033898148069449409, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: dialogues.Array.data[1]
+      value: "In uno capirai come creare una stella con le sue fasi evolutive e nell\u2019altro
+        ti verranno chieste informazioni sulle tre stelle pi\xF9 conosciute."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8033898148069449409, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
+      propertyPath: dialogues.Array.data[2]
+      value: Intorno a te troverai altre informazioni sulle costellazioni e sulla
+        vita delle stelle.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52c88564212a1a54aaa072127edd0be3, type: 3}
 --- !u!1 &1981727978 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7820578605559165763, guid: b1da4b25a59db0d478b434e2a45e4069, type: 3}
@@ -1624,7 +2220,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 745b1473dc11ed7459e24bda022960e2, type: 2}
+  - {fileID: 2100000, guid: 8f39ff9f87082ca4f9f238d64c6cb3c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11181,3 +11777,5 @@ SceneRoots:
   - {fileID: 813623407}
   - {fileID: 463694482}
   - {fileID: 367214630}
+  - {fileID: 1926140024}
+  - {fileID: 733288126}

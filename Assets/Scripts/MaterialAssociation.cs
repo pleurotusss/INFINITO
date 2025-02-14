@@ -11,7 +11,7 @@ public class MaterialAssociation : MonoBehaviour
     public static MaterialAssociation Instance { get; private set; }
     private LevelContext _levelContext;
 
-    public Transform holdPoint; // Punto di tenuta per il materiale
+    private Transform holdPoint; // Punto di tenuta per il materiale
     public EventReference correctSound;
     public EventReference wrongSound;
     public float grabRange = 5f; // Distanza alla quale il materiale può essere preso
@@ -22,7 +22,7 @@ public class MaterialAssociation : MonoBehaviour
 
     //private int correctMaterials = 0; // Contatore dei materiali corretti
     public int totalMaterials = 8; // Numero totale di materiali da posizionare
-    public string cutsceneSceneName = "CutsceneScene"; // Nome della scena della cutscene
+    
 
 
     public Transform Teca;
@@ -39,18 +39,39 @@ public class MaterialAssociation : MonoBehaviour
     void Awake()
     {
         // Implementazione Singleton per evitare duplicati
-        if (Instance == null)
+        //if (Instance == null)
+        //{
+        //    Instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject); // Se esiste già un'istanza, distruggi quella nuova
+        //    return;
+        //}
+
+        _levelContext = FindObjectOfType<LevelContext>();
+
+        // Trova la Main Camera
+        Camera mainCamera = Camera.main;
+        if (mainCamera != null)
         {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
+            // Cerca il figlio chiamato "HoldPoint" nella Main Camera
+            Transform foundHoldPoint = mainCamera.transform.Find("HoldPoint");
+            if (foundHoldPoint != null)
+            {
+                holdPoint = foundHoldPoint;
+                Debug.Log("HoldPoint assegnato correttamente.");
+            }
+            else
+            {
+                Debug.LogError("Errore: HoldPoint non trovato come figlio della Main Camera!");
+            }
         }
         else
         {
-            Destroy(gameObject); // Se esiste già un'istanza, distruggi quella nuova
-            return;
+            Debug.LogError("Errore: Main Camera non trovata nella scena!");
         }
-
-        _levelContext = FindObjectOfType<LevelContext>();
     }
 
     void Start()
@@ -85,34 +106,34 @@ public class MaterialAssociation : MonoBehaviour
 
 
    void CheckForSelectableMaterials()
-{
-    // Disabilita tutti gli outline
-    foreach (GameObject material in GameObject.FindGameObjectsWithTag("Material"))
     {
-        Outline outline = material.GetComponent<Outline>();
-        if (outline != null)
+        // Disabilita tutti gli outline
+        foreach (GameObject material in GameObject.FindGameObjectsWithTag("Material"))
         {
-            outline.enabled = false;
-        }
-    }
-
-    // Se il giocatore ha già un materiale in mano, non evidenziare altri materiali
-    if (heldMaterial != null) return;
-
-    // Controlla se un oggetto è selezionabile
-    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-    if (Physics.Raycast(ray, out RaycastHit hit, grabRange))
-    {
-        if (hit.collider.CompareTag("Material"))
-        {
-            Outline outline = hit.collider.GetComponent<Outline>();
+            Outline outline = material.GetComponent<Outline>();
             if (outline != null)
             {
-                outline.enabled = true; // Attiva il contorno
+                outline.enabled = false;
+            }
+        }
+
+        // Se il giocatore ha già un materiale in mano, non evidenziare altri materiali
+        if (heldMaterial != null) return;
+
+        // Controlla se un oggetto è selezionabile
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hit, grabRange))
+        {
+            if (hit.collider.CompareTag("Material"))
+            {
+                Outline outline = hit.collider.GetComponent<Outline>();
+                if (outline != null)
+                {
+                    outline.enabled = true; // Attiva il contorno
+                }
             }
         }
     }
-}
 
 
 
@@ -267,10 +288,7 @@ void DropMaterial()
     }
 }
 
-    void LoadCutScene()
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(cutsceneSceneName);
-    }
+   
 
 
     void MoveMaterial()

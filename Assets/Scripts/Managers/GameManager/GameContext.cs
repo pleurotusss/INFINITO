@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class GameContext : MonoBehaviour
 {
+    //private PlayableDirector director;
+    
 
     private bool _isStartButtonPressed;
     public bool IsStartButtonPressed => _isStartButtonPressed;
@@ -17,8 +20,17 @@ public class GameContext : MonoBehaviour
     private string _currentFloor;
     public string CurrentFloor => _currentFloor;
 
+    private bool _cutsceneFinished = false;
+    public bool IsCutsceneFinished => _cutsceneFinished;
+
     private bool _isPlanetsFloorComplete = false;
     private bool _isStarsFloorComplete = false;
+    private bool _isRelativityFloorComplete = false;
+
+    //public void OnCutsceneEnd(PlayableDirector director)
+    //{
+    //    cutsceneFinished = true;
+    //}
     public void PlanetsFloorIsComplete() 
     { 
         _isPlanetsFloorComplete = true; 
@@ -27,9 +39,13 @@ public class GameContext : MonoBehaviour
     {
         _isStarsFloorComplete = true;
     }
+    public void RelativityFloorComplete()
+    {
+        _isRelativityFloorComplete = true;
+    }
     public void CountCompletedLevels()
     { 
-        _counterLED = (_isPlanetsFloorComplete ? 1 : 0) + (_isStarsFloorComplete ? 1 : 0);
+        _counterLED = (_isPlanetsFloorComplete ? 1 : 0) + (_isStarsFloorComplete ? 1 : 0) + (_isRelativityFloorComplete ? 1 : 0);
     }
 
     public void Initialize()
@@ -42,11 +58,6 @@ public class GameContext : MonoBehaviour
         _currentFloor = currentFloor;
     }
 
-    //public void IncrementCounterLED()
-    //{
-    //    _counterLED += 1;
-    //}
-
     public void OnTimerFinished()
     {
         Debug.Log("Sono nel GameContext: OnTimerFinished().");
@@ -54,8 +65,13 @@ public class GameContext : MonoBehaviour
     }
 
     public void OnStartButtonPressed()
-    {
-        Debug.Log("Sono nel GameContext: OnStartButtonPressed().");
+    {  
         _isStartButtonPressed = true;
+    }
+
+    public void resetStartButtonPressed()
+    {
+        _isStartButtonPressed = false;
+        _counterLED = 0;
     }
 }

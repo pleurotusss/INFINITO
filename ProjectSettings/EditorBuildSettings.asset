@@ -25,10 +25,16 @@ EditorBuildSettings:
     guid: addf0e76b5dfb734c8e1978e835d7db9
   - enabled: 1
     path: Assets/Scenes/Minigioco_1.unity
-    guid: 5325333f06f35d54fa8caa82fab93bfb
+    guid: 7ea42957f840eee4e800a0c78c2486ef
   - enabled: 1
     path: Assets/Scenes/Minigioco_2.unity
     guid: 26c942500c1196d469f5e7b1dd4bf5f9
+  - enabled: 1
+    path: Assets/Scenes/Piano_-3.unity
+    guid: 9506dc2e19548c14fb430e954112b6ed
+  - enabled: 1
+    path: Assets/Scenes/CutSceneEND.unity
+    guid: 0ad8d1a51aa98674183ea82d4031cffc
   - enabled: 0
     path: Assets/Scenes/EX_SCENES/EX_TitleScreen.unity
     guid: 28cbfb0be8b80ed4b924cdc34cb62bf7

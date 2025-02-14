@@ -22,8 +22,9 @@ public class LED2State : GameState
 
     public override GameStateMachine.EGameStateMachine GetNextState()
     {
-        //if (Context.CounterLED == 2)
-        //    return GameStateMachine.EGameStateMachine.LED3;
+        Context.CountCompletedLevels();
+        if (Context.CounterLED == 3)
+            return GameStateMachine.EGameStateMachine.LED3;
 
         return StateKey;
     }

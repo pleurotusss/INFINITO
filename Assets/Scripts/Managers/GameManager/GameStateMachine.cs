@@ -8,7 +8,7 @@ using UnityEngine.Assertions;
 
 public class GameStateMachine : BaseStateManager<GameStateMachine.EGameStateMachine>
 {
-    public enum EGameStateMachine { TitleScreen, CommandsScreen, Lobby, LED1, LED2 }
+    public enum EGameStateMachine { TitleScreen, CommandsScreen, Lobby, LED1, LED2, LED3, EndGame }
     private GameContext _context;
     public static GameStateMachine Instance;
     
@@ -33,6 +33,8 @@ public class GameStateMachine : BaseStateManager<GameStateMachine.EGameStateMach
         States.Add(EGameStateMachine.Lobby, new LobbyState(_context, EGameStateMachine.Lobby));
         States.Add(EGameStateMachine.LED1, new LED1State(_context, EGameStateMachine.LED1));
         States.Add(EGameStateMachine.LED2, new LED2State(_context, EGameStateMachine.LED2));
+        States.Add(EGameStateMachine.LED3, new LED3State(_context, EGameStateMachine.LED3));
+        States.Add(EGameStateMachine.EndGame, new EndGameState(_context, EGameStateMachine.EndGame));
 
         CurrentState = States[EGameStateMachine.TitleScreen];
     }

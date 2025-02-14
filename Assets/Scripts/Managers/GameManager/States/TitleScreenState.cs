@@ -6,7 +6,10 @@ public class TitleScreenState : GameState
 {
     public TitleScreenState(GameContext context, GameStateMachine.EGameStateMachine estate) : base(context, estate) { }
 
-    public override void EnterState() { }
+    public override void EnterState() {
+
+        Debug.Log("ENTERING TITLESCREEN STATE");
+    }
 
     public override void UpdateState() { }
 
@@ -16,7 +19,11 @@ public class TitleScreenState : GameState
     public override GameStateMachine.EGameStateMachine GetNextState() 
     {
         if (Context.IsStartButtonPressed)
+        {
+            
             return GameStateMachine.EGameStateMachine.CommandsScreen;
+        }
+            
 
         return StateKey;
     }

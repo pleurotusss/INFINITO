@@ -9,6 +9,7 @@ public class LevelContext : MonoBehaviour
 
     private int _counterPlanetsFloor;
     private int _counterStarsFloor;
+    private int _counterRelativityFloor;
 
     public int CounterPlanetsFloor => _counterPlanetsFloor;
     public int CounterStarsFloor => _counterStarsFloor;
@@ -17,6 +18,7 @@ public class LevelContext : MonoBehaviour
     {
         _counterPlanetsFloor = 0;
         _counterStarsFloor = 0;
+        _counterRelativityFloor = 0;
         _gameContext = FindObjectOfType<GameContext>();
     }
     
@@ -29,5 +31,10 @@ public class LevelContext : MonoBehaviour
     {
         _counterStarsFloor++;
         if (_counterStarsFloor == 2) GameContext.StarsFloorIsComplete();
+    }
+    public void IncrementRelativityFloor()
+    {
+        _counterRelativityFloor++;
+        if (_counterRelativityFloor == 1) GameContext.RelativityFloorComplete();
     }
 }
