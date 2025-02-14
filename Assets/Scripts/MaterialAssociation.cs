@@ -4,7 +4,7 @@ using FMODUnity;
 using StarterAssets;
 using UnityEditor;
 using UnityEngine;
-using static UnityEditor.Profiling.RawFrameDataView;
+//using static UnityEditor.Profiling.RawFrameDataView;
 
 public class MaterialAssociation : MonoBehaviour
 {
