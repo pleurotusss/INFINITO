@@ -36,7 +36,7 @@ public class StartState : LevelState
                 break;
             case "Piano_-3":
                 Debug.Log("LEVEL MANAGER --- STANZA RELATIVITÀ");
-                //Setto il current state
+                _nextState = LevelStateMachine.ELevelStateMachine.RelativityLevel;
                 break;
             default:
                 Debug.Log("LEVEL MANAGER --- NESSUN LIVELLO ATTIVO");

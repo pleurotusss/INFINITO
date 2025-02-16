@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StarsState : LevelState
+public class StarsFloorState : LevelState
 {
-    public StarsState(LevelContext context, LevelStateMachine.ELevelStateMachine estate) : base(context, estate)
+    public StarsFloorState(LevelContext context, LevelStateMachine.ELevelStateMachine estate) : base(context, estate)
     {
         Context = context;
     }
@@ -35,7 +35,7 @@ public class StarsState : LevelState
                 break;
             case "Piano_-3":
                 Debug.Log("LEVEL MANAGER --- STANZA RELATIVITÀ");
-                //Setto il current state
+                _nextState = LevelStateMachine.ELevelStateMachine.RelativityLevel;
                 break;
             default:
                 Debug.Log("LEVEL MANAGER --- NESSUN LIVELLO ATTIVO");

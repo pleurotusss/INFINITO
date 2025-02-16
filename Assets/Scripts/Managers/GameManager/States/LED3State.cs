@@ -22,7 +22,8 @@ public class LED3State : GameState
 
     public override GameStateMachine.EGameStateMachine GetNextState()
     {
-        if(Context.CurrentFloor == "Piano_0")
+        Context.CountCompletedLevels();
+        if (Context.CurrentFloor == "Piano_0")
             return GameStateMachine.EGameStateMachine.EndGame;
 
         return StateKey;

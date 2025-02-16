@@ -6,19 +6,33 @@ using System.Collections;
 public class ChangeSceneOnClick : MonoBehaviour
 {
     public string sceneToLoad; // Imposta questa variabile dall'Inspector con il nome della scena da caricare
-    private Camera mainCamera;
-    private bool sceneLoaded = false;
+    private Camera _mainCamera;
+    private bool _sceneLoaded = false;
+    private CanvasGroup _mirinoCanvasGroup;
+    GameObject _mirino;
 
     private void Start()
     {
-        mainCamera = Camera.main;
+        _mainCamera = Camera.main;
+
+        _mirino = GameObject.Find("Mirino");
+        if (_mirino != null)
+        {
+            _mirinoCanvasGroup = _mirino.GetComponent<CanvasGroup>();
+
+            // Se il CanvasGroup non esiste, lo aggiunge automaticamente
+            if (_mirinoCanvasGroup == null)
+            {
+                _mirinoCanvasGroup = _mirino.AddComponent<CanvasGroup>();
+            }
+        }
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !sceneLoaded) // Click sinistro del mouse
+        if (Input.GetMouseButtonDown(0) && !_sceneLoaded) // Click sinistro del mouse
         {
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+            Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
@@ -33,13 +47,13 @@ public class ChangeSceneOnClick : MonoBehaviour
         // Controlla se esiste una camera con il tag "Secondary Cam"
         //if (GameObject.FindGameObjectWithTag("SecondaryCam") == null)
         //{
-        //    sceneLoaded = false;
-        //    mainCamera.gameObject.SetActive(true);
+        //    _sceneLoaded = false;
+        //    _mainCamera.gameObject.SetActive(true);
         //}
         if (GameObject.Find("SecondaryCamera") == null)
         {
-            sceneLoaded = false;
-            mainCamera.gameObject.SetActive(true);
+            _sceneLoaded = false;
+            _mainCamera.gameObject.SetActive(true);
         }
 
     }
@@ -55,11 +69,16 @@ public class ChangeSceneOnClick : MonoBehaviour
         }
 
         // Disabilita la MainCamera una volta caricata la scena
-        if (mainCamera != null)
+        if (_mainCamera != null)
         {
-            mainCamera.gameObject.SetActive(false);
-            sceneLoaded = true;
+            _mainCamera.gameObject.SetActive(false);
+            _sceneLoaded = true;
         }
+
+        _mirinoCanvasGroup.alpha = 0f;
+        Cursor.lockState = CursorLockMode.None; // Sblocca il cursore
+        Cursor.visible = true; // Rende visibile il cursore
+
     }
 }
 

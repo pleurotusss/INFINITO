@@ -76,48 +76,70 @@ public class DragDropManager : MonoBehaviour
         starProgressText.text = $"{stelleCorrette}/{stelle.Count}";
     }
 
-  public void AggiornaPunteggio()
-{
-    scoreText.text = $"{punteggio}";  // Aggiorna il testo del punteggio
-    PlayerPrefs.SetInt("Punteggio", punteggio); 
-    PlayerPrefs.Save(); 
-
-    if (punteggio <= 0)
+    public void AggiornaPunteggio()
     {
-        punteggio = 0; // Evita punteggi negativi
-        AttivaCanvasPunteggioZero();  // Chiama la funzione per attivare il Canvas speciale
-    }
-}
+        scoreText.text = $"{punteggio}";  // Aggiorna il testo del punteggio
+        PlayerPrefs.SetInt("Punteggio", punteggio); 
+        PlayerPrefs.Save(); 
 
-private void FineGiocoCanvas()
-{
-    gameOver = true;
-    CanvasGioco.SetActive(false);  // Disattiva il Canvas di gioco
-    CanvasFine.SetActive(true);  // Attiva il Canvas di fine gioco
-
-    starNameText.gameObject.SetActive(false);
-    temperaturaDrop.gameObject.SetActive(false);
-    massaDrop.gameObject.SetActive(false);
-    costellazioneDrop.gameObject.SetActive(false);
-
-    int punteggioFinale = PlayerPrefs.GetInt("Punteggio", 0);
-    if (finalScoreText != null)
-    {
-        finalScoreText.text = $"{punteggioFinale}";
+        if (punteggio <= 0)
+        {
+            punteggio = 0; // Evita punteggi negativi
+            AttivaCanvasPunteggioZero();  // Chiama la funzione per attivare il Canvas speciale
+        }
     }
 
-    AggiornaProgressoStelle();
-    //PlayerPrefs.SetInt("GiocoCompletato", 1);
-    //PlayerPrefs.Save();
-}
 
+    private void FineGioco()
+    {
+        //gameOver = true;
+        if (CanvasFine != null)
+        {
+            FineGiocoCanvas();
+            //CanvasFine.SetActive(true);
+        }
 
+        //starNameText.gameObject.SetActive(false);
+        //temperaturaDrop.gameObject.SetActive(false);
+        //massaDrop.gameObject.SetActive(false);
+        //costellazioneDrop.gameObject.SetActive(false);
 
+        //// Recupera e mostra il punteggio finale
+        //int punteggioFinale = PlayerPrefs.GetInt("Punteggio", 0);
+        //if (finalScoreText != null)
+        //{
+        //    finalScoreText.text = $"{punteggioFinale}";
+        //}
 
+        AggiornaProgressoStelle();
+        PlayerPrefs.SetInt("GiocoCompletato", 1);  // Imposta il flag per indicare che il gioco è stato completato
+        PlayerPrefs.Save();
+    }
+    private void FineGiocoCanvas()
+    {
+        gameOver = true;
 
+        int punteggioFinale = PlayerPrefs.GetInt("Punteggio", 0);
+        Debug.Log($"PUNTEGGIO FINALE: {punteggioFinale}");
+        if (finalScoreText != null)
+        {
+            finalScoreText.text = $"{punteggioFinale}";
+        }
 
-    
+        CanvasGioco.SetActive(false);  // Disattiva il Canvas di gioco
+        CanvasFine.SetActive(true);  // Attiva il Canvas di fine gioco
 
+        //starNameText.gameObject.SetActive(false);
+        //temperaturaDrop.gameObject.SetActive(false);
+        //massaDrop.gameObject.SetActive(false);
+        //costellazioneDrop.gameObject.SetActive(false);
+
+        
+
+        AggiornaProgressoStelle();
+            PlayerPrefs.SetInt("GiocoCompletato", 1);
+            PlayerPrefs.Save();
+    }
 
     private void AttivaCanvasPunteggioZero()
 {
@@ -126,7 +148,6 @@ private void FineGiocoCanvas()
 
     CanvasGioco.SetActive(false); // Nasconde il gioco
     CanvasPunteggioZero.SetActive(true); // Mostra il canvas punteggio zero
-
 
 
     // Disattiva gli elementi di gioco
@@ -139,20 +160,20 @@ private void FineGiocoCanvas()
 }
 
 
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.F))  // Modifica questa combinazione di tasti come preferisci
-        {
-            AttivaCheat();
-        }
-    }
+    //private void Update()
+    //{
+    //    if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.F))  // Modifica questa combinazione di tasti come preferisci
+    //    {
+    //        AttivaCheat();
+    //    }
+    //}
 
-    private void AttivaCheat()
-    {
-        FineGiocoCanvas();
-        PlayerPrefs.SetInt("Punteggio", 100);  // Imposta il punteggio a 100
-        PlayerPrefs.Save();
-    }
+    //private void AttivaCheat()
+    //{
+    //    FineGiocoCanvas();
+    //    PlayerPrefs.SetInt("Punteggio", 100);  // Imposta il punteggio a 100
+    //    PlayerPrefs.Save();
+    //}
 
 
 
@@ -244,30 +265,7 @@ private void FineGiocoCanvas()
 
     
 
-   private void FineGioco()
-{
-    gameOver = true;
-    if (CanvasFine != null)
-    {
-        CanvasFine.SetActive(true);
-    }
-
-    starNameText.gameObject.SetActive(false);
-    temperaturaDrop.gameObject.SetActive(false);
-    massaDrop.gameObject.SetActive(false);
-    costellazioneDrop.gameObject.SetActive(false);
-
-    // Recupera e mostra il punteggio finale
-    int punteggioFinale = PlayerPrefs.GetInt("Punteggio", 0);
-    if (finalScoreText != null)
-    {
-        finalScoreText.text = $"{punteggioFinale}";
-    }
-
-    AggiornaProgressoStelle();
-    PlayerPrefs.SetInt("GiocoCompletato", 1);  // Imposta il flag per indicare che il gioco è stato completato
-    PlayerPrefs.Save();
-}
+  
 
 
     public void CheckAllValues()

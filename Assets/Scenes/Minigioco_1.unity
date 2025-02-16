@@ -5729,6 +5729,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1968637215}
+  - component: {fileID: 1968637219}
   - component: {fileID: 1968637218}
   - component: {fileID: 1968637217}
   - component: {fileID: 1968637216}
@@ -5801,19 +5802,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1968637217}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 240688334}
-        m_TargetAssemblyTypeName: CanvasSwitcher, Assembly-CSharp
-        m_MethodName: SwitchToWelcome
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1968637217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5852,6 +5841,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968637214}
   m_CullTransparentMesh: 1
+--- !u!114 &1968637219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968637214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328dd080d12d34546b8a399739361834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToReload: Minigioco_1
 --- !u!1 &2112523803
 GameObject:
   m_ObjectHideFlags: 0

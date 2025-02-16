@@ -30,7 +30,7 @@ public class CanvasSwitcher : MonoBehaviour
         if (startButton != null) startButton.onClick.AddListener(SwitchToCreation);
         if (nextButton != null) nextButton.onClick.AddListener(SwitchToFusion);
         if (endButton != null) endButton.onClick.AddListener(SwitchToEnd);
-        if (ricominciaButton != null) ricominciaButton.onClick.AddListener(SwitchToWelcome);
+        //if (ricominciaButton != null) ricominciaButton.onClick.AddListener(SwitchToWelcome);
 
         if (fusionCanvas != null)
         {
@@ -61,20 +61,20 @@ public class CanvasSwitcher : MonoBehaviour
         endCanvas.SetActive(true);
     }
 
-    public void SwitchToWelcome()
-    {
-        // Cancella tutti i dati salvati e torna al canvas di benvenuto
-        //PlayerPrefs.DeleteAll();
-        //PlayerPrefs.Save(); 
+    //public void SwitchToWelcome()
+    //{
+    //    // Cancella tutti i dati salvati e torna al canvas di benvenuto
+    //    //PlayerPrefs.DeleteAll();
+    //    //PlayerPrefs.Save(); 
 
-        Debug.Log("[CanvasSwitcher] Tutti i dati sono stati cancellati. Nuovo inizio.");
+    //    Debug.Log("[CanvasSwitcher] Tutti i dati sono stati cancellati. Nuovo inizio.");
         
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        SceneManager.UnloadSceneAsync("Minigioco_2").completed += (AsyncOperation op) =>
-        {
-            SceneManager.LoadSceneAsync("Minigioco_2", LoadSceneMode.Additive);
-        };
-    }
+    //    //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //    SceneManager.UnloadSceneAsync("Minigioco_1").completed += (AsyncOperation op) =>
+    //    {
+    //        SceneManager.LoadSceneAsync("Minigioco_1", LoadSceneMode.Additive);
+    //    };
+    //}
 
     private void ResetFusionCanvas()
     {

@@ -12,6 +12,7 @@ TagManager:
   - Slot
   - Material
   - Pianeta
+  - NPCStopPoint
   layers:
   - Default
   - TransparentFX
